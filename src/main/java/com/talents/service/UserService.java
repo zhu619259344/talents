@@ -22,4 +22,8 @@ public class UserService {
         List<User> list = userMapper.page(start,pageSize);
         return list;
     }
+
+    public int count(){
+        return userMapper.selectCount(null);
+    }
 }
