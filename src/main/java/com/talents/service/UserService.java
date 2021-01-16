@@ -1,6 +1,5 @@
-package com.talents.dao.service;
+package com.talents.service;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.talents.dao.User;
 import com.talents.dao.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,4 +17,9 @@ public class UserService {
         return userMapper.selectById(id);
     }
 
+    public List<User> page(int pager, int pageSize) {
+        int start = (pager - 1) * pageSize;
+        List<User> list = userMapper.page(start,pageSize);
+        return list;
+    }
 }

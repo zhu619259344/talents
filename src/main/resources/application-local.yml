@@ -4,3 +4,7 @@ spring:
     url: jdbc:mysql://8.131.93.73:3306/cinnabar?characterEncoding=utf8
     username: root
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+logging:
+  level:
+    com.talents.dao.mapper: debug
