@@ -1,7 +1,7 @@
 spring:
   datasource:
     password: 619259344
-    url: jdbc:mysql://8.131.93.73:3306/cinnabar?characterEncoding=utf8
+    url: jdbc:mysql://101.133.172.211:3306/cinnabar?characterEncoding=utf8
     username: root
     driver-class-name: com.mysql.cj.jdbc.Driver
 
