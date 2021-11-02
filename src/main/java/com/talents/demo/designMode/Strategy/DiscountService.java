@@ -26,9 +26,4 @@ public class DiscountService {
         DiscountStrategy discountStrategy = map.get(type);
         discountStrategy.doDiscount();
     }
-
-    @Scheduled(fixedDelay = 100)
-    public void fn(){
-        discount(MembersTypeEnum.month.name());
-    }
 }
