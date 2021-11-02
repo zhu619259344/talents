@@ -10,7 +10,7 @@ import java.util.List;
 @Component
 public interface UserMapper extends BaseMapper<User> {
 
-    @Select("SELECT * from hq_user\n" +
+    @Select("SELECT * from hq_user " +
             "limit #{start},#{pageSize}")
     List<User> page(@Param("start") int start, @Param("pageSize") int pageSize);
 }
