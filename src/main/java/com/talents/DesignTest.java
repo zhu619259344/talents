@@ -1,7 +1,6 @@
 package com.talents;
 
-import com.talents.dao.mapper.UserMapper;
-import com.talents.demo.designMode.Strategy.DiscountService;
+import com.talents.demo.designMode.strategy.DiscountService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

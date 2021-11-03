@@ -1,4 +1,4 @@
-package com.talents.demo.designMode.Strategy;
+package com.talents.demo.designMode.strategy;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
