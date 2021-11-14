@@ -1,5 +1,6 @@
 package com.talents;
 
+import com.talents.demo.designMode.factory.PayFactory;
 import com.talents.demo.designMode.strategy.DiscountService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,6 +18,11 @@ public class DesignTest {
     @Test
     public void testSelect() {
         discountService.discount("month");
+    }
+
+    @Test
+    public void testFactory() {
+        PayFactory.getPay("ali").createOrder();
     }
 
 }
